@@ -1,5 +1,15 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Indie Flower', cursive;
+    --fonte3: 'Sriracha', cursive; 
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -20,6 +31,8 @@ header > h1 {
     padding-top: 50px;
     /*  text-transform: uppercase; */
     font-variant: small-caps; /* first letter bigger than the others but all cap size*/
+    font-family: var(--fonte3);
+    font-size: 10vw;
 }
 
 header > p {
@@ -39,9 +52,14 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1.5em;
     padding-left: 30px;
+    font-size: 3vw;
 
+}
+
+section > p {
+    font-family: var(--fonte2);
 }
 
 section.normal {
@@ -56,7 +74,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgb(82, 77, 77);
 
 }
